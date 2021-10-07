@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(226, 43%, 10%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+span{
+    color: hsl(235, 45%, 61%);
+    font-weight: 300;
+}
+
+span.Active{
+    color:white;
+}
+
+span.but:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.title{
+    font-weight: 500;
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.points{
+    position: relative;
+    left: 11.5rem;
+    bottom: 3rem;
+}
+
+.hrs{
+    color: white;
+    font-weight: 300;
+    margin-top: -3rem;
+    margin-left: 20px;
+    font-size: 55px;
+}
+
+.last{
+    position: relative;
+    font-size: 13px;
+    font-weight: 400;
+    bottom: 3rem;
+    left: 20px;
+    color: hsl(236, 100%, 87%);
+}
+
+.container{
+    display: flex;
+}
+
+.Profile{
+    background-color: hsl(235, 46%, 20%);
+    height: 29rem;
+    width: 15rem;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.options{
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-bottom: -2.5rem;
+    width: 15rem;
+}
+
+.but{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.Avatar{
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 18rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.AvatarIcon{
+    border: solid 3px white;
+    border-radius: 50%;
+    width: 5rem;
+    height: auto;
+}
+
+.report{
+    margin-top: 2rem;
+    color: hsl(236, 100%, 87%);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.user{
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    margin-top: -10px;
+}
+
+.cards{
+    position: relative;
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Flip{
+    width: 15rem;
+    height: 12.5rem;
+    margin-left: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Flip.top{
+    position: absolute;
+    top: 0px;
+}
+
+.Flip.bot{
+    position: absolute;
+    bottom: 0px;
+}
+
+.Flip.top.right{
+    right: 0px;
+}
+
+.Flip.top.left{
+    left: 0px;
+}
+
+.Flip.bot.right{
+    right: 0px;
+}
+
+.Flip.bot.left{
+    left: 0px;
+}
+
+.card{
+    width: 15rem;
+    height: 10.265rem;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    position: absolute;
+    top: 2.2rem;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: hsl(246, 80%, 60%)
+}
+
+.icon{
+    position: relative;
+    left: 9rem;
+    bottom: 0.6rem;
+}
+
+#Exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+
+#Work{
+    background-color: hsl(15, 100%, 70%);
+}
+
+#Play{
+    background-color: hsl(195, 74%, 62%);
+}
+
+#Study{
+    background-color: hsl(348, 100%, 68%);
+}
+
+#Social{
+    background-color: hsl(264, 64%, 52%);
+}
+
+#Self{
+    background-color: hsl(43, 84%, 65%);
+}
+
+.container.movil{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    min-height: 1300px;
+}
+.cards.movil{
+    display: flex;
+    flex-direction: column;
+    width: 337.5px;
+} 
+
+.card.movil{
+    position: relative;
+    top : -5.2rem;
+    width: 337.5px;
+    height: 7.7rem;
+}
+
+.Flip.movil{
+    margin-left: 0rem;
+    margin-top: 1rem;
+    width: 337.5px;
+    height: 10rem;
+    position: unset;
+}
+
+.icon.movil{
+    width: 81px;
+    height: 100px;
+    left: 17rem;
+}
+
+.Profile.movil{
+    height: 13rem;
+    width: 337.5px;
+}
+
+.Avatar.movil{
+    display: flex;
+    height: 9.3rem;
+    padding-left:0;
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.AvatarIcon.movil{
+    height: 5rem;
+    margin-top: 0.7rem;
+}
+
+.user.movil{
+    margin-top: -1rem;
+    font-size: 25px;
+}
+
+.ar.movil{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.options.movil{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    width: 337.5px;
+}
+
+.but{
+    margin: 1rem;
+}
+
+.points.movil{
+    left: 18rem;
+    bottom: 2rem;
+}
+
+.title.movil{
+    position: relative;
+    top: 1rem;
+}
+
+.hrs.movil{
+    font-size: 35px;
+    margin-top: -1.5rem;
+}
+
+.last.movil{
+    left: 13rem;
+    bottom: 4.1rem;
+}

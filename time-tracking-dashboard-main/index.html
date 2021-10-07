@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 2rem;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="Profile">
+      <div class="Avatar">
+        <img src="images/image-jeremy.png" alt="Jeremy" class="AvatarIcon movil">
+        <div class="ar">
+          <p class="report">Report for</p>
+          <p class="user">Jeremy Robson</p>
+        </div>
+      </div>
+      <div class="options">
+        <span class="but">Daily</span>
+        <span class="Active but">Weekly</span>
+        <span class="but">Monthly</span>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="Flip top left" id="Work">
+        <div class="icon"><img src="images/icon-work.svg" alt="Work"></div>
+        <div class="card">
+          <p class="title">Work</p>
+          <svg class="points" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill=" hsl(235, 45%, 61%)" cursor='pointer'><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+          <p class="hrs">32 hrs</p>
+          <span class="last">Last Week - 36hrs</span>
+        </div>
+      </div>
+      <div class="Flip top" id="Play">
+        <div class="icon"><img src="images/icon-play.svg" alt="Play"></div>
+        <div class="card">
+          <p class="title">Play</p>
+          <svg class="points" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill=" hsl(235, 45%, 61%)" cursor='pointer'><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+          <p class="hrs">10 hrs</p>
+          <span class="last">Last Week - 8hrs</span>
+        </div>
+      </div>
+      <div class="Flip top right" id="Study">
+        <div class="icon"><img src="images/icon-study.svg" alt="Study"></div>
+        <div class="card">
+          <p class="title">Study</p>
+          <svg class="points" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill=" hsl(235, 45%, 61%)" cursor='pointer'><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+          <p class="hrs">4 hrs</p>
+          <span class="last">Last Week - 7hrs</span>
+        </div>
+      </div>
+      <div class="Flip bot left" id="Exercise">
+        <div class="icon"><img src="images/icon-exercise.svg" alt="Exercise"></div>
+        <div class="card">
+          <p class="title">Exercise</p>
+          <svg class="points" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill=" hsl(235, 45%, 61%)" cursor='pointer'><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+          <p class="hrs">4 hrs</p>
+          <span class="last">Last Week - 5hrs</span>
+        </div>
+      </div>
+      <div class="Flip bot" id="Social">
+        <div class="icon"><img src="images/icon-social.svg" alt="Social" ></div>
+        <div class="card">
+          <p class="title">Social</p>
+          <svg class="points" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill=" hsl(235, 45%, 61%)" cursor='pointer'><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+          <p class="hrs">5 hrs</p>
+          <span class="last">Last Week - 10hrs</span>
+        </div>
+      </div>
+      <div class="Flip bot right" id="Self">
+        <div class="icon"><img src="images/icon-self-care.svg" alt="Self Care"></div>
+        <div class="card">
+          <p class="title">Self Care</p>
+          <svg class="points" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill=" hsl(235, 45%, 61%)" cursor='pointer'><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+          <p class="hrs">2 hrs</p>
+          <span class="last">Last Week - 2hrs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
